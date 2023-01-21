@@ -1,0 +1,13 @@
+{
+  "model_name": "KM_UniConvNV",
+  "model_type": "uniconv",
+  "version": {
+    "major": 0,
+    "minor": 0,
+    "patch": 0,
+    "train_date": "20220812"
+  },
+  "properties": {
+    "description": ""
+  }
+}

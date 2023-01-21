@@ -1,0 +1,19 @@
+{
+  "model_files": {
+    "net": {
+      "net": "uniconv.onnx",
+      "backend": "kestrel_nart",
+      "input": {
+        "input": "input"
+      },
+      "output": {
+        "output": "output"
+      }
+    }
+  },
+  "input_h": 544,
+  "input_w": 960,
+  "image_means": [123.675, 116.28, 103.53],
+  "image_stds": [58.395, 57.12, 57.375],
+  "is_rgb": true
+}

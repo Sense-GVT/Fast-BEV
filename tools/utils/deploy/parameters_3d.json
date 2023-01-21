@@ -1,0 +1,21 @@
+{
+  "model_files": {
+    "net": {
+      "net": "uniconv.onnx",
+      "backend": "kestrel_nart",
+      "input": {
+        "input": "input"
+      },
+      "output": {
+        "cls_score": "cls_score",
+        "bbox_pred": "bbox_pred",
+        "dir_cls_preds": "dir_cls_preds"
+      }
+    }
+  },
+  "max_num": 300,
+  "num_classes": 4,
+  "pc_range": [-100, -50, -5, 70, 50, 3],
+  "n_voxels": [200, 200, 6],
+  "voxel_size": [0.4, 0.4, 1.0]
+}
