@@ -6,9 +6,9 @@
 ![image](https://github.com/Sense-GVT/Fast-BEV/blob/main/fast-bev.png)
 
 
+
 Thanks to M<sup>2</sup>BEV, Fast-BEV is based on its codebase for practice. In this repo you can enjoy the codebase and experimental settings of Fast-BEV and M<sup>2</sup>BEV.
-
-
+[M2BEV config](https://github.com/Sense-GVT/Fast-BEV/tree/dev/configs/m2bev)
 
 ## Citation
 ```
