@@ -24,4 +24,3 @@ srun -p ${PARTITION} \
     --kill-on-bad-exit=1 \
     ${SRUN_ARGS} \
     python -u tools/train.py ${CONFIG} --work-dir=${WORK_DIR} --launcher="slurm" ${PY_ARGS}
-    # --exclude "SH-IDC1-10-5-38-[37,41]" \
