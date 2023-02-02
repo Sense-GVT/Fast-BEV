@@ -6,6 +6,7 @@
 
 ## Usage
 
+<<<<<<< HEAD
 ### Installation
 
 * CUDA>=9.2, GCC>=5.4, Python >= 3.6, Pytorch >= 1.8.1, Torchvision >= 0.9.1
@@ -113,6 +114,9 @@ sh tools/fastbev_run.sh <PARTITION>
 ### Deployment
 
 TODO
+=======
+<!-- ## latency on device -->
+>>>>>>> df95a4236b32d835c1df0070a0e72ac2bd7962f1
 
 ## Citation
 ```
@@ -123,3 +127,4 @@ TODO
   year={2023}
 }
 ```
+

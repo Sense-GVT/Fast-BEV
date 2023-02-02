@@ -1,0 +1,214 @@
+Building tensor from ..//input/features_meta_6_32_88_64.json and ..//input/features_data_6_32_88_64.bin to HOST
+Got shape of (6,32,88,64), type of FP32
+Building tensor from ..//input/projection_meta.json and ..//input/projection_data_d32_88.bin to HOST
+Got shape of (6,3,4), type of FP32
+Building tensor from ..//input/n_voxels_meta.json and ..//input/n_voxels_data_128_128_6.bin to HOST
+Got shape of (3), type of INT32
+Building tensor from ..//input/voxel_size_meta.json and ..//input/voxel_size_data_078_078_1.bin to HOST
+Got shape of (3), type of FP32
+Building tensor from ..//input/origin_meta.json and ..//input/origin_data.bin to HOST
+Got shape of (3), type of FP32
+using voxels: (128,128,6)
+using voxel size: (0.78125,0.78125,1)
+using origin: (0,0,-1)
+build LUT @ GPU cost : 55.8274 ms
+backproject using LUT @ GPU cost : 12.0798 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.5052 ms
+backproject using LUT @ GPU cost : 3.36922 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4118 ms
+backproject using LUT @ GPU cost : 3.11414 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.497 ms
+backproject using LUT @ GPU cost : 2.69449 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4897 ms
+backproject using LUT @ GPU cost : 2.55286 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4995 ms
+backproject using LUT @ GPU cost : 2.46685 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4085 ms
+backproject using LUT @ GPU cost : 2.44505 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.8829 ms
+backproject using LUT @ GPU cost : 3.62551 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.6407 ms
+backproject using LUT @ GPU cost : 3.59449 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 56.5744 ms
+backproject using LUT @ GPU cost : 3.56141 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 62.4976 ms
+backproject using LUT @ GPU cost : 4.06961 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.5147 ms
+backproject using LUT @ GPU cost : 3.85657 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4955 ms
+backproject using LUT @ GPU cost : 3.5418 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.5005 ms
+backproject using LUT @ GPU cost : 3.20629 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4707 ms
+backproject using LUT @ GPU cost : 2.90522 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4791 ms
+backproject using LUT @ GPU cost : 2.84455 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4888 ms
+backproject using LUT @ GPU cost : 2.82291 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4385 ms
+backproject using LUT @ GPU cost : 2.75687 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4232 ms
+backproject using LUT @ GPU cost : 2.65203 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4066 ms
+backproject using LUT @ GPU cost : 2.61533 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.5026 ms
+backproject using LUT @ GPU cost : 2.58056 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.5234 ms
+backproject using LUT @ GPU cost : 2.54388 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4559 ms
+backproject using LUT @ GPU cost : 2.54377 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.5164 ms
+backproject using LUT @ GPU cost : 2.64521 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4816 ms
+backproject using LUT @ GPU cost : 2.57368 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4851 ms
+backproject using LUT @ GPU cost : 2.80276 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.5247 ms
+backproject using LUT @ GPU cost : 2.74245 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4615 ms
+backproject using LUT @ GPU cost : 2.58866 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4684 ms
+backproject using LUT @ GPU cost : 2.53977 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4043 ms
+backproject using LUT @ GPU cost : 2.48699 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.489 ms
+backproject using LUT @ GPU cost : 2.60013 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4226 ms
+backproject using LUT @ GPU cost : 2.56017 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.487 ms
+backproject using LUT @ GPU cost : 2.56783 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.9909 ms
+backproject using LUT @ GPU cost : 6.77789 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4511 ms
+backproject using LUT @ GPU cost : 2.69748 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.5249 ms
+backproject using LUT @ GPU cost : 2.60875 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4577 ms
+backproject using LUT @ GPU cost : 2.54063 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4458 ms
+backproject using LUT @ GPU cost : 2.53844 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.9564 ms
+backproject using LUT @ GPU cost : 2.71163 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 56.3606 ms
+backproject using LUT @ GPU cost : 3.28025 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.5063 ms
+backproject using LUT @ GPU cost : 3.17926 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.5878 ms
+backproject using LUT @ GPU cost : 3.39812 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4564 ms
+backproject using LUT @ GPU cost : 3.29116 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4719 ms
+backproject using LUT @ GPU cost : 3.09009 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4688 ms
+backproject using LUT @ GPU cost : 2.74422 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.528 ms
+backproject using LUT @ GPU cost : 2.63624 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.7788 ms
+backproject using LUT @ GPU cost : 2.67227 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.5226 ms
+backproject using LUT @ GPU cost : 2.64095 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.4825 ms
+backproject using LUT @ GPU cost : 2.55601 ms
+
+backproject project rate: 97320, 0.98999
+build LUT @ GPU cost : 55.5076 ms
+backproject using LUT @ GPU cost : 2.57161 ms
+
+backproject project rate: 97320, 0.98999
+AVG backproject using LUT @ GPU cost times 50 cost: 3.12972 ms
