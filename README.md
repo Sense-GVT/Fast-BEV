@@ -5,6 +5,7 @@
 ![image](https://github.com/Sense-GVT/Fast-BEV/blob/main/benchmark.png)
 
 
+<!-- ## latency on device -->
 
 ## Citation
 ```
@@ -15,3 +16,4 @@
   year={2023}
 }
 ```
+
