@@ -115,8 +115,11 @@ sh tools/fastbev_run.sh <PARTITION>
     ```
 
 ### Deployment
-
 TODO
+
+
+# View Transformation Latency on device
+[2D-to-3D on CUDA & CPU](https://github.com/Sense-GVT/Fast-BEV/tree/dev/script/view_tranform_cuda)
 
 ## Citation
 ```
