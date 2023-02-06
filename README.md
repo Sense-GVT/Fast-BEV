@@ -1,4 +1,5 @@
 # Fast-BEV
+
 [Fast-BEV: A Fast and Strong Bird’s-Eye View Perception Baseline](https://arxiv.org/abs/2301.12511)
 ![image](https://github.com/Sense-GVT/Fast-BEV/blob/main/fast-bev++.png)
 ![image](https://github.com/Sense-GVT/Fast-BEV/blob/main/benchmark_setting.png)
@@ -32,15 +33,23 @@
   │       └── v1.0-trainval
 ```
 
-### Training
+### Pretraining
 
-We provide several configs in `configs/fastbev/exp/paper`.
+```
+  .
+  ├── pretrained_models
+  │   └── cascade_mask_rcnn_r18_fpn_coco-mstrain_3x_20e_nuim_bbox_mAP_0.5110_segm_mAP_0.4070.pth
+```
 
 ### Evaluation
 
+|  Model  | mAP | mATE | mASE | mAOE | mAVE | mAAE | NDS | Download |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| M0 | 0.2770 | 0.7647 | 0.2905 | 0.5334 | 0.4699 | 0.2131 | 0.4114 | [model](https://drive.google.com/file/d/1_L3y6LMV9BAFJw0XaZRTNo-kDlhgTS17/view?usp=sharing) &#124; [log](https://drive.google.com/file/d/1SFs2XWvO1kJvybwgrafAbuYy_7-DtUUP/view?usp=share_link) | 
+
 ### Deployment
 
-# View Transformation Latency on device
+## View Transformation Latency on device
 [2D-to-3D on CUDA & CPU](https://github.com/Sense-GVT/Fast-BEV/tree/dev/script/view_tranform_cuda)
 
 ## Citation
