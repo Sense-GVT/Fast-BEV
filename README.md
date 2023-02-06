@@ -33,6 +33,8 @@
   │       └── v1.0-trainval
 ```
 
+[download](https://drive.google.com/drive/folders/10KyLm0xW3QiLhAefxBbXR-Hw_7nel_tm?usp=share_link)
+
 ### Pretraining
 
 ```
@@ -41,13 +43,27 @@
   │   └── cascade_mask_rcnn_r18_fpn_coco-mstrain_3x_20e_nuim_bbox_mAP_0.5110_segm_mAP_0.4070.pth
 ```
 
-### Evaluation
+[download](https://drive.google.com/drive/folders/19BD4totDHtwnHtOqTdn0xYJh7stwYd9l?usp=share_link)
 
-|  Model  | mAP | mATE | mASE | mAOE | mAVE | mAAE | NDS | Download |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| M0 | 0.2770 | 0.7647 | 0.2905 | 0.5334 | 0.4699 | 0.2131 | 0.4114 | [model](https://drive.google.com/file/d/1_L3y6LMV9BAFJw0XaZRTNo-kDlhgTS17/view?usp=sharing) &#124; [log](https://drive.google.com/file/d/1SFs2XWvO1kJvybwgrafAbuYy_7-DtUUP/view?usp=share_link) | 
+### Training
+
+```
+  .
+  ├── work_dirs
+    └── fastbev
+      └── exp
+          └── paper
+              └── fastbev_m0_r18_s256x704_v200x200x4_c192_d2_f4
+                  ├── epoch_20.pth
+                  ├── latest.pth -> epoch_20.pth
+                  ├── log.eval.fastbev_m0_r18_s256x704_v200x200x4_c192_d2_f4.02062323.txt
+                  └── log.test.fastbev_m0_r18_s256x704_v200x200x4_c192_d2_f4.02062309.txt
+```
+
+[download](https://drive.google.com/drive/folders/1Ja9mqOE0iGPysVxmLSrZyUoCEBYu5fMH?usp=share_link)
 
 ### Deployment
+TODO
 
 ## View Transformation Latency on device
 [2D-to-3D on CUDA & CPU](https://github.com/Sense-GVT/Fast-BEV/tree/dev/script/view_tranform_cuda)
