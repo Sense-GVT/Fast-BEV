@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 T=`date +%m%d%H%M`
 
-MMDET3D=${MMDET3D:-/mnt/cache/huangbin1/m2bev}
+MMDET3D=${MMDET3D:-/mnt/cache/huangbin1/Fast-BEV}
 SRUN_ARGS=${SRUN_ARGS:-"-s"}
-RETRY=${RETRY:-1}
 echo MMDET3D: $MMDET3D
 echo SRUN_ARGS: $SRUN_ARGS
-echo RETRY: $RETRY
 START_TIME=`date +%Y%m%d-%H:%M:%S`
 
 
@@ -73,37 +71,6 @@ function slurm_eval {
         --out $RESULT \
         --eval bbox \
         2>&1 | tee work_dirs/fastbev/exp/$EXPNAME/log.eval.$JOB_NAME.$T.txt > /dev/null &
-}
-
-function batch_slurm_test {
-    PARTITION=$1
-    GPUS=$2
-    EXPNAME=$3
-    JOB_NAME=${4:-`basename $EXPNAME`}
-    GPUS_PER_NODE=$(($GPUS<8?$GPUS:8))
-    mkdir -p work_dirs/fastbev/exp/$EXPNAME/batch
-    mkdir -p work_dirs/fastbev/exp/$EXPNAME/test/
-    for RESUME in `ls work_dirs/fastbev/exp/$EXPNAME/batch/epoch*.pth`; do
-        BASENAME=`basename $RESUME`
-        SUB_JOB_NAME=test-$JOB_NAME-$BASENAME
-        echo slurm_test; sleep 0.5s
-        echo RESUME: $RESUME
-        echo SUB_JOB_NAME: $SUB_JOB_NAME
-        echo LOG: work_dirs/fastbev/exp/$EXPNAME/test/log.test.$BASENAME.$T
-        MMDET3D=$MMDET3D \
-        SRUN_ARGS=$SRUN_ARGS \
-        GPUS=$GPUS GPUS_PER_NODE=$GPUS_PER_NODE QUOTATYPE=$QUOTATYPE \
-        sh ./tools/slurm_test.sh \
-            $PARTITION \
-            $SUB_JOB_NAME \
-            configs/fastbev/exp/$EXPNAME.py \
-            $RESUME \
-            --out work_dirs/fastbev/exp/$EXPNAME/test/$BASENAME/results.$BASENAME.pkl \
-            --eval bbox \
-            --eval-options jsonfile_prefix=work_dirs/fastbev/exp/$EXPNAME/test/$BASENAME \
-            2>&1 | tee work_dirs/fastbev/exp/$EXPNAME/test/log.test.$BASENAME.$T \
-        &
-    done
 }
 
 function slurm_benchmark {
