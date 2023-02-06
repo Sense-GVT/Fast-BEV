@@ -70,8 +70,8 @@ model = dict(
         loss_dir=dict(
             type='CrossEntropyLoss', use_sigmoid=False, loss_weight=0.8)),
     multi_scale_id=[0],
-    n_voxels=(250, 250, 6),
-    voxel_size=[0.4, 0.4, 1.0],
+    n_voxels=[[250, 250, 6]],
+    voxel_size=[[0.4, 0.4, 1.0]],
     # model training and testing settings
     train_cfg=dict(
         assigner=dict(

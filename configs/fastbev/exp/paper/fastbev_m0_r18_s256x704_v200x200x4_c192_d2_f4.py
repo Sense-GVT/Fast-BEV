@@ -69,9 +69,9 @@ model = dict(
         loss_bbox=dict(type='SmoothL1Loss', beta=1.0 / 9.0, loss_weight=0.8),
         loss_dir=dict(
             type='CrossEntropyLoss', use_sigmoid=False, loss_weight=0.8)),
-    multi_scale_id=[0],  # 4x
-    n_voxels=(200, 200, 4),
-    voxel_size=[0.5, 0.5, 1.5],
+    multi_scale_id=[0],
+    n_voxels=[[200, 200, 4]],
+    voxel_size=[[0.5, 0.5, 1.5]],
     # model training and testing settings
     train_cfg=dict(
         assigner=dict(

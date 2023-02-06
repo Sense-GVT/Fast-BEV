@@ -201,7 +201,7 @@ class FastBEV(BaseDetector):
                     if self.style in ['v1', 'v2']:
                         # wo/ bev ms
                         n_voxels, voxel_size = self.n_voxels[0], self.voxel_size[0]
-                    else:  
+                    else:
                         # v3/v4 bev ms
                         n_voxels, voxel_size = self.n_voxels[lvl], self.voxel_size[lvl]
                     points = get_points(  # [3, vx, vy, vz]
