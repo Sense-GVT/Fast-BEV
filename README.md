@@ -19,6 +19,7 @@
 
 ### Dataset preparation
 
+```
   .
   ├── data
   │   └── nuscenes
@@ -29,6 +30,7 @@
   │       ├── nuscenes_infos_val_4d_interval3_max60.pkl
   │       ├── v1.0-test
   │       └── v1.0-trainval
+```
 
 ### Training
 
