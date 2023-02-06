@@ -107,7 +107,7 @@ QUOTATYPE=$2
 # slurm_train $PARTITION 32 paper/fastbev_r50_v4_ms_20cbgs_s256x704_v200x200x6_c256_d6_f4
 
 # test
-# slurm_test $PARTITION 16 paper/fastbev_m0_r18_s256x704_v200x200x4_c192_d2_f4
+# slurm_test $PARTITION 32 paper/fastbev_m0_r18_s256x704_v200x200x4_c192_d2_f4
 
 # eval
 # slurm_eval $PARTITION 1 paper/fastbev_m0_r18_s256x704_v200x200x4_c192_d2_f4
