@@ -7,6 +7,8 @@
 
 ## Usage
 
+[usage](https://github.com/Sense-GVT/Fast-BEV/blob/dev/tools/fastbev_run.sh)
+
 ### Installation
 
 * CUDA>=9.2
