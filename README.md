@@ -60,7 +60,7 @@
                   └── log.test.fastbev_m0_r18_s256x704_v200x200x4_c192_d2_f4.02062309.txt
 ```
 
-[download](https://drive.google.com/drive/folders/1Ja9mqOE0iGPysVxmLSrZyUoCEBYu5fMH?usp=share_link)
+[download](https://drive.google.com/drive/folders/1JUe-HtaZEdYAz5-pj5jzoiXf8KN5oZ9W?usp=sharing)
 
 ### Deployment
 TODO
