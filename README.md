@@ -43,7 +43,7 @@
   │   └── cascade_mask_rcnn_r18_fpn_coco-mstrain_3x_20e_nuim_bbox_mAP_0.5110_segm_mAP_0.4070.pth
 ```
 
-[download](https://drive.google.com/drive/folders/19BD4totDHtwnHtOqTdn0xYJh7stwYd9l?usp=share_link)
+[download](https://drive.google.com/file/d/1cXAX56lnCHwEUC0cTjP-gRK7zNrNz7Bc/view?usp=sharing)
 
 ### Training
 
