@@ -8,7 +8,11 @@
 
 ### Installation
 
-* CUDA>=9.2, GCC>=5.4, Python>=3.6, Pytorch>=1.8.1, Torchvision>=0.9.1
+* CUDA>=9.2
+* GCC>=5.4
+* Python>=3.6
+* Pytorch>=1.8.1
+* Torchvision>=0.9.1
 * MMCV-full==1.4.0
 * MMDetection==2.14.0
 * MMSegmentation==0.14.1
