@@ -103,7 +103,7 @@ QUOTATYPE=$2
 # slurm_train $PARTITION 32 paper/fastbev_m4_r50_s320x880_v250x250x6_c256_d6_f4
 # slurm_train $PARTITION 32 paper/fastbev_m5_r50_s512x1408_v250x250x6_c256_d6_f4
 
-# Multi-scale FastBEV
+# Multi-Scale FastBEV
 # slurm_train $PARTITION 32 paper/fastbev_r50_v4_ms_20cbgs_s256x704_v200x200x6_c256_d6_f4
 
 # test

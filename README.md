@@ -19,6 +19,17 @@
 
 ### Dataset preparation
 
+.
+├── data
+│   └── nuscenes
+│       ├── maps
+│       ├── maps_bev_seg_gt_2class
+│       ├── nuscenes_infos_test_4d_interval3_max60.pkl
+│       ├── nuscenes_infos_train_4d_interval3_max60.pkl
+│       ├── nuscenes_infos_val_4d_interval3_max60.pkl
+│       ├── v1.0-test
+│       └── v1.0-trainval
+
 ### Training
 
 We provide several configs in `configs/fastbev/exp/paper`.
