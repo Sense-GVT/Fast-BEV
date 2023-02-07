@@ -35,7 +35,7 @@
   │       └── v1.0-trainval
 ```
 
-[download](https://drive.google.com/drive/folders/10KyLm0xW3QiLhAefxBbXR-Hw_7nel_tm?usp=share_link)
+[download](https://drive.google.com/drive/folders/10KyLm0xW3QiLhAefxBbXR-Hw_7nel_tm?usp=sharing)
 
 ### Pretraining
 
@@ -45,7 +45,7 @@
   │   └── cascade_mask_rcnn_r18_fpn_coco-mstrain_3x_20e_nuim_bbox_mAP_0.5110_segm_mAP_0.4070.pth
 ```
 
-[download](https://drive.google.com/file/d/1cXAX56lnCHwEUC0cTjP-gRK7zNrNz7Bc/view?usp=sharing)
+[download](https://drive.google.com/drive/folders/19BD4totDHtwnHtOqTdn0xYJh7stwYd9l?usp=sharing)
 
 ### Training
 
@@ -62,7 +62,7 @@
                   └── log.test.fastbev_m0_r18_s256x704_v200x200x4_c192_d2_f4.02062309.txt
 ```
 
-[download](https://drive.google.com/drive/folders/1JUe-HtaZEdYAz5-pj5jzoiXf8KN5oZ9W?usp=sharing)
+[download](https://drive.google.com/drive/folders/1Ja9mqOE0iGPysVxmLSrZyUoCEBYu5fMH?usp=sharing)
 
 ### Deployment
 TODO
