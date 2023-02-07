@@ -14,7 +14,7 @@ function slurm_train {
     EXPNAME=$3
     JOB_NAME=${4:-`basename $EXPNAME`}
     GPUS_PER_NODE=$(($GPUS<8?$GPUS:8))
-    LOG_FILE=logs/paper_train_${START_TIME}.log
+    LOG_FILE=arun_log/paper_train_${START_TIME}.log
 
     echo slurm_train; sleep 0.5s
     MMDET3D=$MMDET3D \
@@ -108,6 +108,14 @@ QUOTATYPE=$2
 
 # test
 # slurm_test $PARTITION 32 paper/fastbev_m0_r18_s256x704_v200x200x4_c192_d2_f4
+# slurm_test $PARTITION 32 paper/fastbev_m1_r18_s320x880_v200x200x4_c192_d2_f4
+# slurm_test $PARTITION 32 paper/fastbev_m2_r34_s256x704_v200x200x4_c224_d4_f4
+# slurm_test $PARTITION 32 paper/fastbev_m4_r50_s320x880_v250x250x6_c256_d6_f4
+# slurm_test $PARTITION 32 paper/fastbev_m5_r50_s512x1408_v250x250x6_c256_d6_f4
 
 # eval
 # slurm_eval $PARTITION 1 paper/fastbev_m0_r18_s256x704_v200x200x4_c192_d2_f4
+# slurm_eval $PARTITION 1 paper/fastbev_m1_r18_s320x880_v200x200x4_c192_d2_f4
+# slurm_eval $PARTITION 1 paper/fastbev_m2_r34_s256x704_v200x200x4_c224_d4_f4
+# slurm_eval $PARTITION 1 paper/fastbev_m4_r50_s320x880_v250x250x6_c256_d6_f4
+# slurm_eval $PARTITION 1 paper/fastbev_m5_r50_s512x1408_v250x250x6_c256_d6_f4
