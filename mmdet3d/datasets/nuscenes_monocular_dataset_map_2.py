@@ -24,7 +24,7 @@ class NuScenesMultiView_Map_Dataset2(NuScenesMultiViewDataset):
                  **kwargs):
         super().__init__(**kwargs)
 
-        self.nusc = NuScenes(version='v1.0-trainval', dataroot=self.data_root, verbose=True)
+        self.nusc = NuScenes(version='v1.0-mini', dataroot=self.data_root, verbose=True)
         self.scene2map = get_scene2map(self.nusc)
         self.maps = get_nusc_maps()
         # box 2d
