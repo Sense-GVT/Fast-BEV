@@ -5,6 +5,9 @@
 ![image](https://github.com/Sense-GVT/Fast-BEV/blob/main/benchmark_setting.png)
 ![image](https://github.com/Sense-GVT/Fast-BEV/blob/main/benchmark.png)
 
+## better inference implement
+Thanks to: [CUDA-FastBEV](https://github.com/Mandylove1993/CUDA-FastBEV)
+
 ## Usage
 
 [usage](https://github.com/Sense-GVT/Fast-BEV/blob/dev/tools/fastbev_run.sh)
