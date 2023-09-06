@@ -5,8 +5,9 @@
 ![image](https://github.com/Sense-GVT/Fast-BEV/blob/main/benchmark_setting.png)
 ![image](https://github.com/Sense-GVT/Fast-BEV/blob/main/benchmark.png)
 
-## better inference implement
-Thanks to: [CUDA-FastBEV](https://github.com/Mandylove1993/CUDA-FastBEV)
+## Better Inference Implementation
+Thanks to the repository [CUDA-FastBEV](https://github.com/Mandylove1993/CUDA-FastBEV) inference using CUDA & TensorRT. And provide PTQ and QAT int8 quantization code.
+You can refer to it to get faster speed.
 
 ## Usage
 
