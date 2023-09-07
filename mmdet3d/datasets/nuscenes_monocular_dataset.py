@@ -189,7 +189,7 @@ class NuScenesMultiViewDataset(MultiViewMixin, NuScenesDataset):
             ###### draw 3d box in image ######
             img_gt_list = []
             img_pred_list = []
-            for j in range(len(info['img_info'])):
+            for j in range(len(info['img_info'][:6])):
                 img_pred = imread(info['img_info'][j]['filename'])
                 img_gt = imread(info['img_info'][j]['filename'])
                 # camera name

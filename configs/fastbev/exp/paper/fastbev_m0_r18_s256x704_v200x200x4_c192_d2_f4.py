@@ -8,14 +8,14 @@ model = dict(
         num_stages=4,
         out_indices=(0, 1, 2, 3),
         frozen_stages=1,
-        norm_cfg=dict(type='SyncBN', requires_grad=True),
+        norm_cfg=dict(type='BN', requires_grad=True),
         norm_eval=True,
         init_cfg=dict(type='Pretrained', checkpoint='torchvision://resnet18'),
         style='pytorch'
     ),
     neck=dict(
         type='FPN',
-        norm_cfg=dict(type='SyncBN', requires_grad=True),
+        norm_cfg=dict(type='BN', requires_grad=True),
         in_channels=[64, 128, 256, 512],
         out_channels=64,
         num_outs=4),
@@ -28,7 +28,7 @@ model = dict(
         stride=2,
         is_transpose=False,
         fuse=dict(in_channels=64*4*4, out_channels=64*4),
-        norm_cfg=dict(type='SyncBN', requires_grad=True)),
+        norm_cfg=dict(type='BN', requires_grad=True)),
     seg_head=None,
     bbox_head=dict(
         type='FreeAnchor3DHead',
@@ -143,11 +143,11 @@ data_config = {
     'pad_color': (0, 0, 0),
 }
 
-# file_client_args = dict(backend='disk')
-file_client_args = dict(
-    backend='petrel',
-    path_mapping=dict({
-        data_root: 'public-1424:s3://openmmlab/datasets/detection3d/nuscenes/'}))
+file_client_args = dict(backend='disk')
+#file_client_args = dict(
+#    backend='petrel',
+#    path_mapping=dict({
+#        data_root: 'public-1424:s3://openmmlab/datasets/detection3d/nuscenes/'}))
 
 train_pipeline = [
     dict(type='MultiViewPipeline', sequential=True, n_images=6, n_times=4, transforms=[
@@ -279,7 +279,7 @@ data = dict(
 )
 
 optimizer = dict(
-    type='AdamW2',
+    type='Adam',
     lr=0.0004,
     weight_decay=0.01,
     paramwise_cfg=dict(
